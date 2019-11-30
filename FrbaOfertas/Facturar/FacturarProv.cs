@@ -15,7 +15,7 @@ namespace FrbaOfertas.Facturar
     {
         public FacturarProv()
         {
-            InitializeComponent();
+            InitializeComponent();  
             cargarDatos();
         }
         SqlConnection conexion = new SqlConnection("Data Source=localhost\\SQLSERVER2012;Initial Catalog=GD2C2019;Persist Security Info=True;User ID=gdCupon2019;Password=gd2019");

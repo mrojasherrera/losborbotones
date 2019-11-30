@@ -14,7 +14,7 @@ namespace FrbaOfertas.Facturar
     {
         public EmitirFac(String proveedor, DateTime desde, DateTime hasta)
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
     }
 }

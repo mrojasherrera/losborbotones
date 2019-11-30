@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{153E2789-1BFE-49B9-A909-15E3DF8FF63E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrbaOfertas</RootNamespace>
+    <AssemblyName>FrbaOfertas</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbmCliente\AccionesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\AccionesCliente.Designer.cs">
+      <DependentUpon>AccionesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\BuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\BuscarCliente.Designer.cs">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\ModificarCliente.Designer.cs">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\NuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\NuevoCliente.Designer.cs">
+      <DependentUpon>NuevoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\RestaurarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\RestaurarCliente.Designer.cs">
+      <DependentUpon>RestaurarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmProveedor\AccionesProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmProveedor\AccionesProveedor.Designer.cs">
+      <DependentUpon>AccionesProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmProveedor\FiltrarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmProveedor\FiltrarProveedor.Designer.cs">
+      <DependentUpon>FiltrarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmProveedor\ModificarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmProveedor\ModificarProveedor.Designer.cs">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmProveedor\NuevoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmProveedor\NuevoProveedor.Designer.cs">
+      <DependentUpon>NuevoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmProveedor\RestaurarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmProveedor\RestaurarProveedor.Designer.cs">
+      <DependentUpon>RestaurarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\AccionesRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\AccionesRol.Designer.cs">
+      <DependentUpon>AccionesRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\FiltrarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\FiltrarRol.Designer.cs">
+      <DependentUpon>FiltrarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\ModificarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\ModificarRol.Designer.cs">
+      <DependentUpon>ModificarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\NuevoRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\NuevoRol.Designer.cs">
+      <DependentUpon>NuevoRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\RestaurarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\RestaurarRol.Designer.cs">
+      <DependentUpon>RestaurarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\RolEncontrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\RolEncontrado.Designer.cs">
+      <DependentUpon>RolEncontrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargaCredito\BuscarDniCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargaCredito\BuscarDniCliente.Designer.cs">
+      <DependentUpon>BuscarDniCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargaCredito\Cargar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargaCredito\Cargar.Designer.cs">
+      <DependentUpon>Cargar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargaCredito\DummyForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargaCredito\DummyForm1.Designer.cs">
+      <DependentUpon>DummyForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComprarOferta\Comprar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprarOferta\Comprar.Designer.cs">
+      <DependentUpon>Comprar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearOferta\NuevaOferta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearOferta\NuevaOferta.Designer.cs">
+      <DependentUpon>NuevaOferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturar\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturar\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GD2C2019DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GD2C2019DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GD2C2019DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GD2C2019DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoEstadistico\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoEstadistico\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaUsuarios\PantallaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaUsuarios\PantallaAdmin.Designer.cs">
+      <DependentUpon>PantallaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaUsuarios\PantallaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaUsuarios\PantallaCliente.Designer.cs">
+      <DependentUpon>PantallaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaUsuarios\PantallaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaUsuarios\PantallaProveedor.Designer.cs">
+      <DependentUpon>PantallaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AbmCliente\AccionesCliente.resx">
+      <DependentUpon>AccionesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCliente\BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCliente\ModificarCliente.resx">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCliente\NuevoCliente.resx">
+      <DependentUpon>NuevoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCliente\RestaurarCliente.resx">
+      <DependentUpon>RestaurarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\AccionesProveedor.resx">
+      <DependentUpon>AccionesProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\FiltrarProveedor.resx">
+      <DependentUpon>FiltrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\ModificarProveedor.resx">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\NuevoProveedor.resx">
+      <DependentUpon>NuevoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\RestaurarProveedor.resx">
+      <DependentUpon>RestaurarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\AccionesRol.resx">
+      <DependentUpon>AccionesRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\FiltrarRol.resx">
+      <DependentUpon>FiltrarRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\ModificarRol.resx">
+      <DependentUpon>ModificarRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\NuevoRol.resx">
+      <DependentUpon>NuevoRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\RestaurarRol.resx">
+      <DependentUpon>RestaurarRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\RolEncontrado.resx">
+      <DependentUpon>RolEncontrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargaCredito\BuscarDniCliente.resx">
+      <DependentUpon>BuscarDniCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargaCredito\Cargar.resx">
+      <DependentUpon>Cargar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargaCredito\DummyForm1.resx">
+      <DependentUpon>DummyForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprarOferta\Comprar.resx">
+      <DependentUpon>Comprar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearOferta\NuevaOferta.resx">
+      <DependentUpon>NuevaOferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoEstadistico\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaUsuarios\PantallaAdmin.resx">
+      <DependentUpon>PantallaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaUsuarios\PantallaCliente.resx">
+      <DependentUpon>PantallaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaUsuarios\PantallaProveedor.resx">
+      <DependentUpon>PantallaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="GD2C2019DataSet.xsc">
+      <DependentUpon>GD2C2019DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GD2C2019DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GD2C2019DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GD2C2019DataSet.xss">
+      <DependentUpon>GD2C2019DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GD2C2019DataSet1.xsc">
+      <DependentUpon>GD2C2019DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GD2C2019DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GD2C2019DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GD2C2019DataSet1.xss">
+      <DependentUpon>GD2C2019DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-user-computer-icons-form-password-others.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\185-1850575_las-compras-en-linea-venta-graphic-icono-online.png.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29461-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oplata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-planificar-acciones-comerciales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_file_8846.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logview-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc-tools-registry-mechanic-12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-account-profile-user-uploadload-upload--512.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
